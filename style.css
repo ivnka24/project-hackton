@@ -1,0 +1,170 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+#form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+#form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+#form input[type="text"],
+#form input[type="number"],
+#form input[type="date"] {
+    width: calc(100% - 20px);
+    max-width: 300px; 
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-right: 10px; 
+}
+
+#button-submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#button-submit:hover {
+    background-color: #0056b3;
+}
+
+#container {
+    margin-top: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#title-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#edit-button{
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+#detail-button {
+    padding: 8px 16px;
+    background-color: #40A2E3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+#delete-button {
+    padding: 8px 16px;
+    background-color: #EF4040;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+#edit-button:hover{
+   background-color: #45a049;
+}
+#detail-button:hover{
+    background-color: #57b3f3;
+}
+#delete-button:hover {
+    background-color: #ff5454;
+}
+
+/* Add this styling to your existing CSS file */
+
+#form select {
+    width: calc(100% - 20px);
+    max-width: 300px; 
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    background-color: #ffffff; /* Background color */
+    color: #333333; /* Text color */
+    font-size: 16px; /* Font size */
+}
+
+#form select:hover {
+    border-color: #007bff; /* Border color on hover */
+}
+
+#form select:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #007bff; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow on focus */
+}
+
+/* Style dropdown arrow */
+#form select::after {
+    content: "\25BC"; /* Unicode character for down arrow */
+    position: absolute;
+    top: calc(50% - 6px); /* Center the arrow vertically */
+    right: 10px; /* Adjust position as needed */
+    font-size: 12px; /* Font size of the arrow */
+    pointer-events: none; /* Prevent click on arrow */
+}
+
+/* Hover effect on dropdown arrow */
+#form select:hover::after {
+    color: #007bff; /* Color of the arrow on hover */
+}

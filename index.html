@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SPENDING</title>
+    <link rel="stylesheet" href=style.css>
+</head>
+
+<body>
+    <div id="form">
+        <h1>Input Pengeluaran Harian</h1>
+        <label for="day">Nama Hari</label>
+        <select id="day" name="day">
+            <option value="senin" selected>Senin</option>
+            <option value="selasa">Selasa</option>
+            <option value="rabu">Rabu</option>
+            <option value="kamis">Kamis</option>
+            <option value="jumat">Jumat</option>
+            <option value="sabtu">Sabtu</option>
+            <option value="minggu">Minggu</option>
+        </select>
+        <br>
+        <label for="barang">Nama Barang</label>
+        <input type="text" id="barang" name="barang">
+        <br>
+        <label for="jumlah">Jumlah Barang</label>
+        <input type="number" id="jumlah" name="jumlah">
+        <br>
+        <label for="harga">Harga Barang</label>
+        <input type="number" id="harga" name="harga">
+        <br>
+        <label for="tanggal">Tanggal</label>
+        <input type="date" id="tanggal" name="tanggal">
+        <br>
+        <button id="button-submit" onclick="addData()">Input Item</button>
+    </div>
+    <br>
+    <div id="container">
+        <h1 id="title-text">List Pengeluaran</h1>
+
+        <table id="list-data">
+            <tr>
+                <th>No</th>
+                <th>Hari</th>
+                <th>Total Pengeluaran</th>
+                <th>Tanggal</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Senin</td>
+                <td>20/02/2024</td>
+                <td>70000</td>
+                <td>
+                    <button id="edit-button" onclick="editData()">Edit</button>
+                    <button id="detail-button" onclick="detailData()">Detail</button>
+                    <button id="delete-button" onclick="deleteData()">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
